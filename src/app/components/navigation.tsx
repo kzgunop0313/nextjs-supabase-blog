@@ -1,6 +1,6 @@
-'use client'
+'use client';
 
-import Link from 'next/link'
+import Link from 'next/link';
 
 // ナビゲーション
 const Navigation = () => {
@@ -20,7 +20,7 @@ const Navigation = () => {
         </div>
       </div>
     </header>
-  )
-}
+  );
+};
 
-export default Navigation
+export default Navigation;

@@ -1,0 +1,60 @@
+module.exports = {
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+  },
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
+    'prettier',
+  ],
+  plugins: [
+    'react',
+    '@typescript-eslint/eslint-plugin',
+    'prettier',
+    'react-hooks',
+  ],
+  rules: {
+    'no-var': 'error',
+    'prettier/prettier': ['error', { singleQuote: true }],
+    'react/prop-types': 0,
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/jsx-uses-react': 'off',
+    'react/react-in-jsx-scope': 'off',
+    semi: ['error', 'always'],
+    'semi-spacing': ['error', { after: true, before: false }],
+    'semi-style': ['error', 'last'],
+    'no-extra-semi': 'error',
+    'no-unexpected-multiline': 'error',
+    'no-unreachable': 'error',
+    '@typescript-eslint/no-namespace': 'off',
+    'react/no-unknown-property': 'off',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+    process: true,
+  },
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    createDefaultProgram: true,
+    project: './tsconfig.json',
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+};

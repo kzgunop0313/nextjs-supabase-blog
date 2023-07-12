@@ -3,7 +3,7 @@ const Page = () => {
     <div className="h-full">
       <div>メインページ</div>
     </div>
-  )
-}
+  );
+};
 
-export default Page
+export default Page;
