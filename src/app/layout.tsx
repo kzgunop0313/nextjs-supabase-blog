@@ -2,7 +2,7 @@ import 'server-only';
 
 import SupabaseListener from './components/supabase-listener';
 import SupabaseProvider from './components/supabase-provider';
-import '../styles/globals.css';
+import './globals.css';
 import Navigation from './components/navigation';
 import { createClient } from '../utils/supabase-server';
 
