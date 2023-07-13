@@ -13,14 +13,13 @@ const BlogItem = (blog: BlogListType) => {
   if (content.length > MAX_LENGTH) {
     content = content.substring(0, MAX_LENGTH) + '...';
   }
-  console.log(blog);
 
   return (
     <div className="break-words">
       <div className="text-gray-500 text-sm">
         {format(new Date(blog.created_at), 'yyyy/MM/dd HH:mm')}
       </div>
-      <Link href={`blog/${blog.id}`}>
+      <Link href={`/blog/${blog.id}`}>
         <div className="font-bold text-xl">{blog.title}</div>
       </Link>
       <div className="mb-3 text-gray-500">{content}</div>

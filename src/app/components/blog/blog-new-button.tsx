@@ -15,7 +15,7 @@ const BlogNewButton = () => {
     if (login) {
       return (
         <div className="mb-5 flex justify-end">
-          <Link href="blog/new">
+          <Link href="/blog/new">
             <div className="text-white bg-yellow-500 hover:brightness-110 rounded py-1 px-8">
               新規投稿
             </div>
