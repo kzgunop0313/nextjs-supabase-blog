@@ -1,11 +1,15 @@
+import { Suspense } from 'react';
+import BlogList from './components/blog/blog-list';
 import BlogNewButton from './components/blog/blog-new-button';
+import Loading from './loading';
 
-// メインページ
 const Page = () => {
   return (
     <div className="h-full">
       <BlogNewButton />
-      <div>メインページ</div>
+      <Suspense fallback={<Loading />}>
+        <BlogList />
+      </Suspense>
     </div>
   );
 };
