@@ -21,12 +21,12 @@ const BlogItem = (blog: BlogListType) => {
         {format(new Date(blog.created_at), 'yyyy/MM/dd HH:mm')}
       </div>
       <Link href={`blog/${blog.id}`}>
-      <div className="font-bold text-xl">{blog.title}</div>
+        <div className="font-bold text-xl">{blog.title}</div>
       </Link>
       <div className="mb-3 text-gray-500">{content}</div>
       <div className="flex items-center space-x-3">
         <Image
-          src={blog.avatar_url ? blog.avatar_url : '/default.png'}
+          src={'/default.png'}
           className="rounded-full"
           alt="avatar"
           width={45}

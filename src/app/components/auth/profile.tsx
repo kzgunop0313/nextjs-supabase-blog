@@ -142,7 +142,7 @@ const Profile = () => {
         <div className="mb-5">
           <div className="flex justify-center mb-5">
             <Image
-              src={avatarUrl ? avatarUrl : '/default.png'}
+              src={'/default.png'}
               className="rounded-full"
               alt="avatar"
               width={100}
